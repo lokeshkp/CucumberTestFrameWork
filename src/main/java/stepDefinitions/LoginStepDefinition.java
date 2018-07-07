@@ -1,3 +1,4 @@
+/*
 package stepDefinitions;
 
 import java.util.concurrent.TimeUnit;
@@ -76,8 +77,9 @@ public class LoginStepDefinition {
 	
 	@Then("^Close Browser$")
 	public void close_Browser() throws Throwable {
-		driver.close();
+		driver.quit();
 	}
 
 
 }
+*/

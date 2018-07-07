@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="55.855811">
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create new contact" time="32.897455">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="27.291979">
+<testcase classname="Deal Creation" name="Free CRM create a new deal scenario" time="27.291979">
 <system-out><![CDATA[Given User is already Login Page............................................passed
 When Title of login page is Free CRM........................................passed
-Then User enters "lokeshkp" and "sairam123".................................passed
-Then User cliks login button................................................passed
+Then User enters username and password......................................passed
+Then User click login button................................................passed
 Then User is on home page...................................................passed
-Then User moves to new contact page.........................................passed
-Then User fills "pavani" and "kondepudi" and "<compnay>" and "9329334311"...passed
-Then Close Browser..........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create new contact 2" time="22.958356">
-<system-out><![CDATA[Given User is already Login Page............................................passed
-When Title of login page is Free CRM........................................passed
-Then User enters "lokeshkp" and "sairam123".................................passed
-Then User cliks login button................................................passed
-Then User is on home page...................................................passed
-Then User moves to new contact page.........................................passed
-Then User fills "eswari" and "kondepudi" and "<compnay>" and "9293343121"...passed
+Then User moves to new deal page............................................passed
+Then User enter deal details................................................passed
 Then Close Browser..........................................................passed
 ]]></system-out>
 </testcase>

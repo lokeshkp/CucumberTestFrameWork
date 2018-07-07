@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features ="/Users/lokes/eclipse-workspace/CucumberTest/src/main/java/Features/createContacts.feature", 
+@CucumberOptions(features ="/Users/lokes/eclipse-workspace/CucumberTestFrameWork/src/main/java/Features/createDeals.feature", 
 				glue={"stepDefinitions"},
 				monochrome = true,
 				format = {"pretty","junit:junit_xml/cucumber.xml"},
