@@ -1,6 +1,7 @@
-/*package stepDefinitions;
+package stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -16,7 +17,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class DealStepDefinition {
+public class DealsMapStepDefinition {
 	
 	WebDriver driver;
 
@@ -38,9 +39,10 @@ public class DealStepDefinition {
 	
 	@Then("^User enters username and password$")
 	public void user_enters_username_and_password(DataTable credentials) throws Throwable {
-		List<List<String>> data = credentials.raw();
-		driver.findElement(By.name("username")).sendKeys(data.get(0).get(0));
-		driver.findElement(By.name("password")).sendKeys(data.get(0).get(1));
+		for(Map<String,String> dataMap : credentials.asMaps(String.class, String.class)) {
+			driver.findElement(By.name("username")).sendKeys(dataMap.get("username"));
+			driver.findElement(By.name("password")).sendKeys(dataMap.get("password"));
+		}
 	}
 	
 	@Then("^User click login button$")
@@ -67,11 +69,17 @@ public class DealStepDefinition {
 	
 	@Then("^User enter deal details$")
 	public void user_enter_deal_details(DataTable dealdetails) throws Throwable {
-		List<List<String>> data = dealdetails.raw();
-		driver.findElement(By.id("title")).sendKeys(data.get(0).get(0));
-		driver.findElement(By.id("amount")).sendKeys(data.get(0).get(1));
-		driver.findElement(By.name("quantity")).sendKeys(data.get(0).get(2));
-		driver.findElement(By.xpath("//input[@value='Save']")).click();
+		for(Map<String, String> dealData :dealdetails.asMaps(String.class, String.class)){
+			driver.findElement(By.id("title")).sendKeys(dealData.get("Title"));
+			driver.findElement(By.id("amount")).sendKeys(dealData.get("Amount"));
+			driver.findElement(By.name("quantity")).sendKeys(dealData.get("Quantity"));
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			
+			WebElement element = driver.findElement(By.xpath("//a[@title='Deals']"));
+	        Actions action = new Actions(driver); 
+	        action.moveToElement(element).build().perform(); 
+	        driver.findElement(By.linkText("New Deal")).click();
+		}
 	}
 	
 	@Then("^Close Browser$")
@@ -81,4 +89,3 @@ public class DealStepDefinition {
 
 
 }
-*/
