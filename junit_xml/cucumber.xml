@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.189267">
-<testcase classname="Free CRM test feature" name="Creating a new Forms in Free CRM" time="0.189267">
-<system-out><![CDATA[Given Create New Forms......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.186501">
+<testcase classname="Free CRM Hooks Test Feature" name="Free CRM Hooks Scenario" time="0.184767">
+<system-out><![CDATA[Given User enters username and password.....................................passed
+When User clicks login button...............................................passed
+Then User is on home page...................................................passed
+Then create contact.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM Hooks Test Feature" name="Free CRM Hooks Scenario" time="0.001734">
+<system-out><![CDATA[Given User enters username and password.....................................passed
+When User clicks login button...............................................passed
+Then User is on home page...................................................passed
+Then create deal............................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
