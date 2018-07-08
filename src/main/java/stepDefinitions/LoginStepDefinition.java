@@ -37,9 +37,7 @@ public class LoginStepDefinition {
 
 	@Then("^User enters \"(.*)\" and \"(.*)\"$")
 	public void user_enters_username_and_password(String uname, String pwd) throws Throwable {
-		//driver.findElement(By.name("username")).clear();
 		driver.findElement(By.name("username")).sendKeys(uname);
-		//driver.findElement(By.name("password")).clear();
 		driver.findElement(By.name("password")).sendKeys(pwd);
 	}
 

@@ -1,176 +1,40 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Free CRM create a new deal scenario",
+        "line": 73,
+        "name": "Creating a new Forms in Free CRM",
         "description": "",
-        "id": "deal-creation;free-crm-create-a-new-deal-scenario",
+        "id": "free-crm-test-feature;creating-a-new-forms-in-free-crm",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11800463900,
+              "duration": 189266927,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User is already Login Page",
+            "line": 74,
+            "name": "Create New Forms",
             "match": {
-              "location": "DealsMapStepDefinition.user_is_already_Login_Page()"
+              "location": "TaggingTestStepDefinition.create_New_Forms()"
             },
             "keyword": "Given "
-          },
+          }
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 61234943,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Title of login page is Free CRM",
-            "match": {
-              "location": "DealsMapStepDefinition.title_of_login_page_is_Free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 319873295,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User enters username and password",
-            "match": {
-              "location": "DealsMapStepDefinition.user_enters_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 7
-              },
-              {
-                "cells": [
-                  "lokeshkp",
-                  "sairam123"
-                ],
-                "line": 8
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7935719397,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User click login button",
-            "match": {
-              "location": "DealsMapStepDefinition.user_click_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7362506,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User is on home page",
-            "match": {
-              "location": "DealsMapStepDefinition.user_is_on_home_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2488991293,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User moves to new deal page",
-            "match": {
-              "location": "DealsMapStepDefinition.user_moves_to_new_deal_page()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 18298618512,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User enter deal details",
-            "match": {
-              "location": "DealsMapStepDefinition.user_enter_deal_details(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "Title",
-                  "Amount",
-                  "Quantity"
-                ],
-                "line": 14
-              },
-              {
-                "cells": [
-                  "Mr.Lokesh",
-                  "120000",
-                  "20"
-                ],
-                "line": 15
-              },
-              {
-                "cells": [
-                  "Mr.JanakiRamayya",
-                  "220000",
-                  "10"
-                ],
-                "line": 16
-              },
-              {
-                "cells": [
-                  "Mr.Dileep",
-                  "320000",
-                  "21"
-                ],
-                "line": 17
-              },
-              {
-                "cells": [
-                  "Mr.Sai Karthik",
-                  "420000",
-                  "34"
-                ],
-                "line": 18
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1322425797,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "Close Browser",
-            "match": {
-              "location": "DealsMapStepDefinition.close_Browser()"
-            },
-            "keyword": "Then "
+            "line": 72,
+            "name": "@SanityTest"
           }
         ]
       }
     ],
-    "name": "Deal Creation",
+    "name": "Free CRM test feature",
     "description": "",
-    "id": "deal-creation",
+    "id": "free-crm-test-feature",
     "keyword": "Feature",
-    "uri": "/Users/lokes/eclipse-workspace/CucumberTestFrameWork/src/main/java/Features/dealsMap.feature"
+    "uri": "/Users/lokes/eclipse-workspace/CucumberTestFrameWork/src/main/java/Features/taggingTest.feature"
   }
 ]

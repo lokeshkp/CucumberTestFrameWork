@@ -1,77 +1,35 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/lokes/eclipse-workspace/CucumberTestFrameWork/src/main/java/Features/taggingTest.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Free CRM Login Feature",
+  "line": 2,
+  "name": "Free CRM test feature",
   "description": "",
-  "id": "free-crm-login-feature",
+  "id": "free-crm-test-feature",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Login Scenario",
+  "line": 73,
+  "name": "Creating a new Forms in Free CRM",
   "description": "",
-  "id": "free-crm-login-feature;free-crm-login-scenario",
+  "id": "free-crm-test-feature;creating-a-new-forms-in-free-crm",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 72,
+      "name": "@SanityTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 4,
-  "name": "User is already Login Page",
+  "line": 74,
+  "name": "Create New Forms",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 5,
-  "name": "Title of login page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "User enters username and password",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
-  "name": "User cliks login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "User is on home page",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "LoginStepDefinition.user_is_already_Login_Page()"
+  "location": "TaggingTestStepDefinition.create_New_Forms()"
 });
 formatter.result({
-  "duration": 25114679464,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.title_of_login_page_is_Free_CRM()"
-});
-formatter.result({
-  "duration": 71544639,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_enters_username_and_password()"
-});
-formatter.result({
-  "duration": 1305880117,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_cliks_login_button()"
-});
-formatter.result({
-  "duration": 11410055783,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 16308219,
+  "duration": 189266927,
   "status": "passed"
 });
 });
